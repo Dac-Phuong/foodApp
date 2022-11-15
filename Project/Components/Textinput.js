@@ -28,6 +28,7 @@ export default function Input({
         ]}
       >
         <TextInput
+          style={styles.input}
           secureTextEntry={hidepassword}
           autoCorrect={false}
           onFocus={() => {
@@ -47,20 +48,23 @@ export default function Input({
   );
 }
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-    },
-    label:{
-        marginVertical:5,
-        fontSize:14,
-        color:'#ccc',
-    },
-    inputContainer:{
-        height:50,
-        paddingHorizontal:15,
-        borderWidth:0.5,
-        borderRadius:8,
-        justifyContent:'center',
-        borderColor:'#CCC'
-    },
+  container: {
+    flex: 1,
+  },
+  label: {
+    marginVertical: 3,
+    fontSize: 14,
+    color: "#7C7C7C",
+  },
+  inputContainer: {
+    height: 46,
+    borderRadius: 8,
+    justifyContent: "center",
+  },
+  input: {
+    width: "100%",
+    height: "100%",
+    borderBottomWidth:0.5,
+    borderColor:'#ccc'
+  },
 });

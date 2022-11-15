@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './Project/Routes/StackNavigator'
 import Account from './Project/HomeScreen/Account';
+import Login from './Project/Login';
+import  Register from "./Project/Register"
 import { useFonts } from "expo-font";
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -16,9 +18,9 @@ export default function App() {
     return console.log('loi roi kia')
   }
   return (
-    // <MyStack>
-    // </MyStack>
-    <Account />
+    <MyStack>
+    </MyStack>
+    //  <Account /> 
   );
 }
 
